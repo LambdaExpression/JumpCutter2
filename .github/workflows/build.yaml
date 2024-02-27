@@ -35,6 +35,6 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller -F setup.py
+          pyinstaller -D setup.py
           ls -lh dist/
 
