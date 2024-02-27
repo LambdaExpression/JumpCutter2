@@ -22,6 +22,7 @@ jobs:
         run: |
           sudo apt update && sudo apt upgrade
           sudo apt install zip unzip
+          sudo apt-get install tree
           sudo apt install ffmpeg
           ffmpeg -version
           
@@ -29,6 +30,7 @@ jobs:
         run: |
           sudo pip3 install pyinstaller
           wget https://github.com/deezer/spleeter/archive/refs/tags/v2.3.0.zip
+          tree -L N
           unzip -d JumpCutter2/pretrained_models/5stems v2.3.0.zip 
 
       - name: Build
