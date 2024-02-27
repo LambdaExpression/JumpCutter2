@@ -30,7 +30,7 @@ jobs:
         run: |
           sudo pip3 install pyinstaller
           wget https://github.com/deezer/spleeter/archive/refs/tags/v2.3.0.zip
-          ls -lh
+          mkdir -p JumpCutter2/pretrained_models/5stem
           unzip -d JumpCutter2/pretrained_models/5stems v2.3.0.zip 
 
       - name: Build
