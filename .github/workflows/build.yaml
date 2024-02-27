@@ -35,6 +35,6 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller -F JumpCutter2/__main__.py
+          pyinstaller -F setup.py
           ls -lh dist/
 
